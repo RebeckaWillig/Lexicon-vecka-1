@@ -9,104 +9,126 @@
 </head>
 
 <body>
-    <div class="top-container">
-        <div class="text-4xl font-bold mb-2">Tech News Today</div>
-        <div class="text-lg opacity-50">
-            Your daily dose of technology updates.
-        </div>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="top-container">
+        <a class="text-4xl font-bold mb-2" href="#">Tech News Today</a>
+        <p class="text-lg opacity-50">Your daily dose of technology updates.</p>
 
-        <div class="dark-strip horizontal-group">
-            <a href="#">Home</a>
-            <a href="#">Gadgets</a>
-            <a href="#">Software</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
+        <nav aria-label="Main" class="dark-strip">
+            <ul class="horizontal-group">
+                <li><a href="#">Gadgets</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="sr-only">Technology News, Reviews, and Analysis</h1>
     <div class="middle-wrapper">
-        <div class="panel">
-            <div class="card">
-                <p class="text-3xl font-bold text-blue-gray">
-                    The Future of AI Assistants
-                </p>
-                <div class="text-sm text-subtle mb-6 pb-4 border-b border-neutral-200">
-                    Published on April 27, 2026 by Jane Doe
-                </div>
-                <div class="stack">
-                    <img src="https://picsum.photos/500/250?random=4" alt="AI representation" />
-                    <h3 class="text-lg font-bold">Introduction</h3>
-                    <div class="block text-base text-muted">
-                        Artificial intelligence is rapidly evolving. We are now seeing
-                        assistants that can perform complex multi-step tasks across
-                        various applications. This new generation of AI promises to
-                        drastically change how we interact with our computers,
-                        prioritizing natural language over traditional user interfaces.
-                    </div>
-                    <button href="#" class="button">Read full article</button>
-                </div>
-            </div>
+        <main class="panel" id="main-content" tabindex="-1">
+            <section class="stack" aria-labelledby="section-heading-latest-news">
+                <h2 id="section-heading-latest-news" class="font-bold">Our Latest Articles</h2>
 
-            <div class="card">
-                <div class="text-3xl font-bold text-blue-gray">
-                    New Smartphone Released
-                </div>
-                <div class="text-sm text-subtle mb-6 pb-4 border-b border-neutral-200">
-                    Published on April 26, 2026 by John Smith
-                </div>
-                <div class="stack">
-                    <img src="https://picsum.photos/500/250?random=5" alt="Smartphone prototype" />
-                    <div class="block text-base text-muted">
+                <article class="card stack">
+                    <header>
+                        <h3 class="text-3xl font-bold text-blue-gray">
+                            <a class="card-link" href="#">The Future of AI Assistants</a>
+                        </h3>
+                        <p class="text-sm text-subtle mb-6 pb-4 border-b border-neutral-200">
+                            Published on <time datetime="2026-04-27">April 27, 2026</time> by Jane Doe
+                        </p>
+                    </header>
+
+                    <img src="https://picsum.photos/500/250?random=4" width="500" height="250"
+                        alt="Green forest with mist rolling down the hills" />
+                    <section class="stack">
+                        <h4 class="text-lg font-bold">Introduction</h4>
+                        <p class="block text-base text-muted">
+                            Artificial intelligence is rapidly evolving. We are now seeing
+                            assistants that can perform complex multi-step tasks across
+                            various applications. This new generation of AI promises to
+                            drastically change how we interact with our computers,
+                            prioritizing natural language over traditional user interfaces.
+                        </p>
+                    </section>
+                    <section class="stack">
+                        <h4 class="text-lg font-bold">Second heading</h4>
+                        <p class="block text-base text-muted">
+                            Artificial intelligence is rapidly evolving. We are now seeing
+                            assistants that can perform complex multi-step tasks across
+                            various applications. This new generation of AI promises to
+                            drastically change how we interact with our computers,
+                            prioritizing natural language over traditional user interfaces.
+                        </p>
+                    </section>
+                    <footer class="stack">
+                        <ul class="flow tags">
+                            <li><a href="/tag/ai">#AI</a></li>
+                            <li><a href="/tag/tech">#Tech</a></li>
+                        </ul>
+                    </footer>
+                </article>
+
+                <article class="card stack">
+                    <header>
+                        <h3 class="text-3xl font-bold text-blue-gray">
+                            <a class="card-link" href="#">New Smartphone Released</a>
+                        </h3>
+                        <p class="text-sm text-subtle mb-6 pb-4 border-b border-neutral-200">
+                            Published on April 26, 2026 by John Smith
+                        </p>
+                    </header>
+
+                    <img src="https://picsum.photos/500/250?random=5" width="500" height="250"
+                        alt="Blue smartphone prototype with big screen">
+                    <p>
                         The latest flagship device from leading manufacturers features an
                         incredible 100-hour battery life and a holographic display that
                         completely redefines mobile interaction. Early reviews are
                         praising its sleek design and unparalleled performance in mobile
                         gaming.
-                    </div>
-                    <button href="#" class="button">Read full article</button>
-                </div>
-            </div>
-        </div>
+                    </p>
+                </article>
+            </section>
+        </main>
 
-        <div class="panel">
-            <div class="card stack">
-                <div class="mb-4 pb-3 border-b-2 border-divider text-lg font-bold text-blue-gray">
-                    About the Author
-                </div>
-                <img src="https://picsum.photos/200/200?random=6" alt="Author photo" />
-                <div class="block text-base text-muted mb-0">
-                    Welcome to our tech blog! We cover the latest trends, reviews, and
-                    news in the fast-paced world of technology.
-                </div>
-            </div>
+        <aside class="panel">
+            <section class="card stack">
+                <h2 class="mb-4 pb-3 border-b-2 border-divider text-lg font-bold text-blue-gray">About the Author</h2>
+                <img src="https://picsum.photos/200/200?random=6" width="200" height="200" alt="Author photo" />
+                <p>Welcome to our tech blog! We cover the latest trends, reviews, and
+                    news in the fast-paced world of technology.</p>
+            </section>
 
-            <div class="card">
-                <div class="mb-4 pb-3 border-b-2 border-divider text-lg font-bold text-blue-gray">
-                    Popular Categories
-                </div>
+            <section class="card">
+                <nav aria-labelledby="popular-categories">
+                    <h2 class="mb-4 pb-3 border-b-2 border-divider text-lg font-bold text-blue-gray"
+                        id="popular-categories">Popular Categories</h2>
+                    <ul class="vertical-group">
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Hardware Reviews</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="card">
+                <h2 class="mb-4 pb-3 border-b-2 border-divider text-lg font-bold text-blue-gray">External links</h2>
                 <ul class="vertical-group">
-                    <div><a href="#">AI & Machine Learning</a></div>
-                    <div><a href="#">Hardware Reviews</a></div>
-                    <div><a href="#">Web Development</a></div>
+                    <li><a href="https://www.google.com">Google</a></li>
+                    <li><a href="https://www.bing.com">Bing</a></li>
+                    <li><a href="https://www.yahoo.com">Yahoo</a></li>
                 </ul>
-            </div>
-            <div class="card">
-                <div class="mb-4 pb-3 border-b-2 border-divider text-lg font-bold text-blue-gray">
-                    External links
-                </div>
-                <div class="vertical-group">
-                    <a href="https://www.google.com">Google</a>
-                    <a href="https://www.bing.com">Bing</a>
-                    <a href="https://www.yahoo.com">Yahoo</a>
-                </div>
-            </div>
-        </div>
+            </section>
+        </aside>
     </div>
 
-    <div class="bottom-container">
-        <div class="block text-base text-white mb-0">
+    <footer class="bottom-container">
+        <p class="block text-base text-white mb-0">
             &copy; 2026 Tech News Today. All rights reserved.
-        </div>
-    </div>
+        </p>
+    </footer>
 </body>
 
 </html>

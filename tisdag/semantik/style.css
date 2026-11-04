@@ -23,6 +23,25 @@
   --transition-link: color 0.3s ease;
 }
 
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 1000;
+
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.skip-link:focus{
+  top: 1rem;
+}
+
 /* Reset/Base */
 * {
   box-sizing: border-box;
