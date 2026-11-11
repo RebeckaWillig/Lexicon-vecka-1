@@ -126,11 +126,11 @@ Idag går vi igenom olika verktyg som är bra att kunna vid tillgänglighetstest
 - Arbete med e-learning, läsning, övningar och kodning.
 - Arbeta med veckans mål och det vi pratat om i veckan.
 
-**På CV-seminariumet går vi igenom:**
+**På kodsnack-seminariumet går vi igenom:**
 - Prata om vad som kan hända när instruktioner är otydliga
 - Följa en kodändring live
 - Vara med och styra kodändringar
-- Gruppövningar inför fredagens kodsnack
+- Frågor inför fredagens kodsnack
 
 ### 🎯 Mål för dagen
 
@@ -158,11 +158,8 @@ Vi delar in i grupper som ni sedan får träffa och prata lite om hur veckan gå
 Exempelfrågor att svara på:
 
 - Vem är jag?
-- Hur har receptsidor förändrat något i mitt liv?
-  - om inte direkt, hur har de förändrat det indirekt?
-    - större press att kunna laga svåra rätter, när allt är tillgängligt?
-    - sparat tid?
-  - Nämn en detalj som gör en receptsida lättare att använda?
+- Hur och när använder du receptsidor om alls?
+- Ge ett exempel på något som du tänker gör en receptsida lättare att använda
 
 #### Presentation
 
@@ -177,9 +174,10 @@ Exempelfrågor att svara på:
   * Förklara hur du tänkt kring t.ex: `<header>, <main>, <section>, <article>`
     * vad representerar vad?
   * Rubriknivåerna (h1, h2, h3) — följer de en logisk struktur?
-  * Bilder — använder du alt-texter? Någon bild i <figure> + <figcaption>?
+  * Bilder — Använder du alt-texter? Någon bild i figure + figcaption?
 * Finns kontrastproblem, saknade alt-texter eller rubrikfel?
   * Hur skulle du kunna åtgärda det i så fall?
+  * Testade du med tangentbordsnavigering, skärmläsare eller andra verktyg? Visade det något som du missat innan eller har du några tankar om hur det var?
 
 #### Diskussionsfrågor
 
@@ -191,8 +189,8 @@ Exempelfrågor att svara på:
 
 Varje grupp delar:
 
-* Vad var svårast i veckans uppgift?
-* Vad tyckte ni i gruppen var mest användbart/intressant som ni lärde er av uppgiften?
+* Vad var svårast att förstå och/eller implementera från veckans teori/genomgångar?
+* Vad tyckte ni i gruppen var mest användbart/intressant som ni lärde er av uppgiften/veckans innehåll?
 
 ### 🎯 Mål för dagen
 
